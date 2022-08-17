@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Hello</h2>
+
+
+
+input
+<input type = "numbers" id= "demo"/>
+<button onclick="addelement()">+</button>
+<br> <br>
+T:
+<p id="numbers"></p>
+<br> <br> 
+<button >calculer</button>
+<p id= "s"></p>
+<br>
+<p id="min"></p>
+<br>
+<p id="max"></p>
+<br>
+<p id="tab"></p>
+
+<script>
+let tab=[]
+let nb=0;
+
+	
+function addelement()
+{
+
+console.log("test");
+document.getElementById('numbers').innerHTML+=" "+
+document.getElementById('demo').value;
+tab[nb]=
+document.getElementById('demo').value;nb++;}
+/*function calculer ()
+{
+let s=0
+let min=0
+let max=0
+for ( let i=0; i<n ; i++)
+{s=s+tab[];} return s ; 
+for ( let i=0;i<nb-1;i++)
+{
+for ( let j=i+1;i<nb;i++)
+{
+if (tab[i]>tab[j]);
+{
+let temp=tab[i];
+tab[i]=tab[j];
+tab[j]= temp;
+}
+}
+
+document.getElementById('min').innerHTML=tab[0];
+document.getElementById('max').innerHTML=tab[nb-1];
+document.getElementById('s').innerHTML=s;
+document.getElementById('tab').innerHTML=tab;};*/
+</script>
+
+    
+    
+
+
+
+
+</body>
+</html>
+

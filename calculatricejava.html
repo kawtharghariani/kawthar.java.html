@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html><head>
+<style>
+	
+input {
+  height: 20px;
+  width: 100%;
+  border: 1px solid #4CAF50;
+}
+td {
+  text-align: center;
+  
+}
+button {
+	width : 100%
+}
+
+
+</style>
+</head>
+<body>
+
+<h2>Ma calculatrice</h2>
+
+
+<input id="demo"  />
+
+<table width="100%">
+<tr>
+	<td>
+	<button type="button" id="1" onclick=myFunction(event)>1</button>
+	</td><td>
+	<button type="button" id="2" onclick=myFunction(event)>2</button>
+	</td><td>
+	<button type="button" id="3" onclick=myFunction(event)>3</button>
+	</td><td>
+	<button type="button" id="+" onclick=myFunctioncalc(event)>+</button>
+	</td>
+</tr>
+<tr>
+	<td>
+		<button type="button" id="4" onclick=myFunction(event)>4</button>
+	</td><td>
+		<button type="button" id="5" onclick=myFunction(event)>5</button>
+	</td><td>
+		<button type="button" id="6" onclick=myFunction(event)>6</button>
+	</td><td>
+		<button type="button" id="-" onclick=myFunctioncalc(event)>-</button>
+	</td>
+</tr>
+
+<tr>
+<td ><button type="button" id="7" onclick=myFunction(event)>7</button></td>
+<td ><button type="button" id="8" onclick=myFunction(event)>8</button></td>
+<td ><button type="button" id="9" onclick=myFunction(event)>9</button></td>
+<td ><button type="button" id="*" onclick=myFunctioncalc(event)>*</button></td>
+</tr>
+</table>
+</p>
+<p>
+<table width="100%">
+<tr>
+<td ><button type="button" id="." onclick=myFunction(event)>.</button></td>
+<td><button type="button" id="/" onclick=myFunctionEqual()>/</button></td>
+<td><button type="button" id="=" onclick=myFunctionEqual()>=</button></td>
+<td><button type="button" id="C" onclick=myFunctionClearl()>C</button></td>
+</tr>
+</table>
+</p>
+
+<script>
+var x = 0; 
+var y = 0;
+var op="";
+
+function myFunction(e) {
+  document.getElementById("demo").value = document.getElementById("demo").value + e.target.id;
+}
+function myFunctioncalc(e) {
+  x = Number(document.getElementById("demo").value);
+  op=e.target.id;
+  document.getElementById("demo").value="";
+}
+
+function myFunctionEqual() {
+  y = Number(document.getElementById("demo").value);
+  if (op=="+")
+  	document.getElementById("demo").value=x+y;
+  else if (op=="-")
+  	document.getElementById("demo").value=x-y;
+  else if (op=="*")
+  	document.getElementById("demo").value=x*y;
+  else 
+  	document.getElementById("demo").value=x/y;    
+}
+function myFunctionClearl() {
+  var x = 0; 
+  var y = 0;
+  var op="";
+  document.getElementById("demo").value="";
+}
+</script>
+
+</body>
+</html>
