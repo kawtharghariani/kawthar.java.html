@@ -1,0 +1,115 @@
+
+<html>
+    <head>
+
+        <script>
+            let card1="";
+            let card2="";
+            let card1id="";
+            let card2id="";            
+            let nbtir=0;
+            function turncard(clicked_id)
+            {
+                let id = clicked_id;
+                switch (id){
+                    case "1":    
+                        document.getElementById('1').cat.jpg;
+                        break;
+                    case "2":
+                        document.getElementById('2').
+                        src='cat.jpg';
+                        break;
+                    case "3":
+                        document.getElementById('3').src='dog.jpg';
+                        break;
+                    case "4":
+                        document.getElementById('4').src='dog.jpg';
+                        break;
+                    case "5":
+                        document.getElementById('5').src='elephant.img';
+                        break;
+                        case "6" : 
+                        document.getElementById('6').scr='lion.ipg'
+                    default:
+                        break;
+
+                }
+                if (nbtir==0){
+                    nbtir ++;
+                    card1=document.getElementById(id).src;
+                    card1id=id;
+                }
+                else{
+                    card2=document.getElementById(id).src;
+                    card2id=id;
+                    setTimeout(verify, 2000);
+                }
+
+            }
+            function verify()
+            {
+                if (card1!=card2) 
+              {
+
+                document.getElementById(card1id).src="image.img";
+                document.getElementById(card2id).src="image.img";
+                nbtir=0;
+                card1id=0;
+                card2id=0;
+                card1id="";
+                card2id="";
+                card3ID+zz
+              }  
+
+            }
+        </script>
+
+    </head>
+    <body>
+
+        <button onclick="document.getElementById('myImage').src='lion.jpg'">
+            <img src="image.img" height ="80" width="100" id="myImage"/></button>
+
+        <button onclick="document.getElementById('image').src='dog.jpg'">
+            <img src="image.img" height ="80" width="100" id="myImage"/></button> 
+        <img src="image.img" height ="80" width="100"  onclick="turncard(this.id)" id="1"  />
+
+     <br> <br>    <button onclick="document.getElementById('img').src='elephant.img'">
+            <img src="image.img" height ="80" width="100" id="myImage"/></button>
+
+        <img src="image.img" height ="80" width="100"  onclick="turncard(this.id)" id="2"/>
+
+
+            <img src="image.img" height ="80" width="100"  onclick="turncard(this.id)" id="3"/>
+
+       <br> <br> <button onclick="document.getElementById('li').src='lion.jpg'">
+                <img src="image.img" height ="80" width="100" id="li"/></button> 
+
+                <img src="image.img" height ="80" width="100" onclick="turncard(this.id)" id="4"/>
+         <button onclick="document.getElementById('ca').src='cat.jpg'">
+            <img src="image.img" height ="80" width="100" id="ch"/></button>
+        <br> <br>
+            <img src="image.img" height ="80" width="100" onclick="turncard(this.id)" id="5"/>
+        <button onclick="document.getElementById('elep').src='elephant.img'">
+            <img src="image.img" height ="80" width="100" id="elep"/></button>   
+           
+            <button onclick="document.getElementById('do').src='dog.jpg'">
+                <img src="image.img" height ="80" width="100" id="ch"/></button>
+               <br> <br> <lable=> j1</lable>
+                <input type="J1" id="n1"> </input>
+                <br>
+                <br>
+                <lable=> j2</lable>
+                <input type="J2" id="n2"> </input>
+                <br>
+                <br>
+                <script>
+                    function add() {
+                    var x = parseInt(document.getElementById("n1").value);
+                    var y = parseInt(document.getElementById("n2").value);
+                    var z=x+y;
+                    console.log(z);
+                    document.getElementById("nr").value=z;
+                    }
+                    </script>
+                    
